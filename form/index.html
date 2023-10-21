@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Form</title>
+  <body>
+    <div class="wrapper">
+        <form class="form">
+            <h1>Форма регистрации</h1>
+            <div class="form__name">
+            <label for="name">Имя:</label>
+            <input class="form__name_input input" type="text" id="name" name="name" placeholder="Ваше имя" required />
+            <span id="nameError" class="error-message" style="display: none"
+              >Имя должно содержать только кириллицу или латиницу, от 3 до 30
+              символов.</span
+            >
+          </div>
+          <div class="form__phone">
+            <label for="phone">Телефон:</label>
+            <input class="form__phone_input input" type="text" id="phone" name="phone" placeholder="Ваш номер телефона" required />
+            <span id="phoneError" class="error-message" style="display: none"
+              >Телефон должен состоять из цифр, от 10 до 15 символов, может
+              начинаться с плюса.</span
+            >
+          </div>
+          <div class="form__password">
+            <label for="password">Пароль:</label>
+            <input class="form__password_ input input" type="password" id="password" name="password" placeholder="Введите пожалуйста пароль" required />
+            <span id="passwordError" class="error-message" style="display: none"
+              >Пароль должен содержать от 8 до 40 символов, хотя бы одну заглавную
+              букву и цифру.</span
+            >
+          
+
+            <label for="confirmPassword">Повторите пароль:</label>
+            <input  class="form__password_ input input"
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              required 
+              placeholder="Повторите пожалуйста пароль"/>
+            <span
+              id="confirmPasswordError"
+              class="error-message"
+              style="display: none"
+              >Пароли не совпадают.</span
+            >
+            </div>
+          <div>
+            <button class="submit" type="submit" >Отправить</button>
+          </div>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

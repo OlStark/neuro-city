@@ -1,0 +1,27 @@
+// Css
+.container {
+}
+
+.slider-container {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+  gap: 2rem;
+  align-items: center;
+}
+
+.slider-container__button {
+  border: none;
+  background: cadetblue;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: scale 0.5s;
+}
+
+.slider-container__button:hover {
+  scale: 120%;
+}

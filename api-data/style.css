@@ -1,0 +1,36 @@
+.posts {
+  display: grid;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  font-size: 1.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 12rem;
+}
+
+.pagination {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.pagination__button {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border: 1px solid darkgrey;
+  background: transparent;
+  border-radius: 1rem;
+  transition: all 0.5s;
+  margin-right: 0.5rem;
+}
+
+.pagination__button:hover {
+  background: #d3e7e7;
+  cursor: pointer;
+}
